@@ -2,18 +2,25 @@
 
 function mainMenu()
 {
-    return readline("Menu principal. (Jouer = j ,Règle = r, Difficulté = d, Exit = e) : ");
+    return readline("Menu principal. (Jouer = j ,Règle = r, Exit = e) : ");
 }
 
-function makeJars()
+function makeJars($difficulty)
 {
     $jars = [];
     for ($i = 0; $i < 5; $i++) {
         $jars[] = 0;
     }
+    for($i = 0 ; $i < $difficulty; $i++){
+
     $snake =  random_int(0, 4);
-
+    echo "snake = $snake";
+    while($jars[$snake] === 1 ){
+    $snake =  random_int(0, 4);
+    }
     $jars[$snake] = 1;
-
+    }
+    
+    var_dump($jars);
     return $jars;
 }
