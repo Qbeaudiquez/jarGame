@@ -20,7 +20,5 @@ function makeJars($difficulty)
     }
     $jars[$snake] = 1;
     }
-    
-    var_dump($jars);
     return $jars;
 }
