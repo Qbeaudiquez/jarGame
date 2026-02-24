@@ -2,7 +2,7 @@
 
 function mainMenu()
 {
-    return $select = readline("Menu principal. (Jouer = j ,Règle = r, Difficulté = d, Exit = e) : ");
+    return readline("Menu principal. (Jouer = j ,Règle = r, Difficulté = d, Exit = e) : ");
 }
 
 function makeJars()
