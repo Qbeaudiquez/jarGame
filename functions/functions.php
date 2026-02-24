@@ -14,7 +14,6 @@ function makeJars($difficulty)
     for($i = 0 ; $i < $difficulty; $i++){
 
     $snake =  random_int(0, 4);
-    echo "snake = $snake";
     while($jars[$snake] === 1 ){
     $snake =  random_int(0, 4);
     }
